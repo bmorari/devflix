@@ -7,14 +7,14 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div style={{background: '#131414'}}>
+    <div style={{background: '#141414'}}>
 
       <Menu />
 
       <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={"Front-end!!"}
+        videoDescription={"Vem aprender front-end com a gente!!!"}
       />
 
       <Carousel
