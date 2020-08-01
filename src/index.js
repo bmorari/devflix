@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './components/Pages/menu/Home';
-import paginaCadastro from './components/Pages/cadastro/video'
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import paginaCadastro from './components/Pages/cadastro/video';
 import paginaCadastroCategoria from './components/Pages/cadastro/categoria';
 
+// eslint-disable-next-line func-names
 const paginaErro = function () {
-  return (<div>Erro 404</div>)
-}
+  return (<div>Erro 404</div>);
+};
 
 ReactDOM.render(
   <BrowserRouter>
@@ -19,5 +20,5 @@ ReactDOM.render(
       <Route component={paginaErro} />
     </Switch>
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
